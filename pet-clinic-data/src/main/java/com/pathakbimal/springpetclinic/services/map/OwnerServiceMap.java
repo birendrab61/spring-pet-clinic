@@ -1,12 +1,12 @@
 package com.pathakbimal.springpetclinic.services.map;
 
 import com.pathakbimal.springpetclinic.model.Owner;
-import com.pathakbimal.springpetclinic.services.CrudService;
+import com.pathakbimal.springpetclinic.services.OwnerService;
 
 import java.util.Set;
 
 public class OwnerServiceMap extends AbstractMapService<Owner,Long>
-        implements CrudService<Owner,Long> {
+        implements OwnerService {
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -26,5 +26,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long>
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
