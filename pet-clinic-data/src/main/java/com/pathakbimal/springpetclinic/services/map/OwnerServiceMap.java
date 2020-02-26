@@ -11,6 +11,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long>
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
+
     }
     @Override
     public void deleteById(Long id) {
@@ -33,4 +34,5 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long>
     public Owner findByLastName(String lastName) {
         return null;
     }
+
 }

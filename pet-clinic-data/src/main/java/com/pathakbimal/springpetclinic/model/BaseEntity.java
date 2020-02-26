@@ -9,5 +9,6 @@ import java.io.Serializable;
 @Setter
 public class BaseEntity implements Serializable {
     private Long id;
+    private String firstName;
 
 }
